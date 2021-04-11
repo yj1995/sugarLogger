@@ -1,0 +1,64 @@
+@import "./font.scss";
+@import "./color.scss";
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    @include montserrat_regular;
+    font-size: 14px;
+    height: 100vh;
+    scroll-behavior: smooth;
+    background-color: $bgClr;
+}
+
+.mainWrapper {
+    display: flex;
+    width: 100%;
+    .allParent {
+        width: 100%;
+        margin: 20px 0px;
+        .header {
+            font-size: 20px;
+            text-align: center;
+            padding-bottom: 10px;
+            @include montserrat_bold;
+        }
+        .tableData {
+            width: 50%;
+            background: $white;
+            position: relative;
+            margin: auto;
+            padding: 10px 30px 20px 30px;
+            .id,
+            .name {
+                display: inline-block;
+                padding: 10px;
+                word-break: break-all;
+                border: 1px solid;
+                width: 45%;
+            }
+        }
+        .filter {
+            .filterParent {
+                width: 50%;
+                position: relative;
+                margin: auto;
+                padding: 10px 30px;
+                background: white;
+                .searchFields {
+                    width: 470px;
+                    border-radius: 4px;
+                    font-size: 14px;
+                    border: 1px solid $borderColor;
+                    padding: 18.5px 14px;
+                    @include montserrat_regular;
+                    margin: 10px 0px 10px 10px;
+                }
+                .radioSpace {
+                    margin: 0px 10px;
+                }
+            }
+        }
+    }
+}
