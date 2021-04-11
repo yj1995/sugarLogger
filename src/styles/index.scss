@@ -36,7 +36,12 @@ body {
                 padding: 10px;
                 word-break: break-all;
                 border: 1px solid;
-                width: 45%;
+            }
+            .widthId {
+                width: 7%;
+            }
+            .widthName {
+                width: 83%;
             }
         }
         .filter {

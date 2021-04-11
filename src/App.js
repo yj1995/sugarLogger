@@ -16,15 +16,15 @@ export function App() {
 
   const renderValue = ({ id, name }) => (
     <div key={id + name}>
-      <span className={styles.id}>{id}</span>
-      <span className={styles.name}>{name}</span>
+      <span className={`${styles.id} ${styles.widthId}`}>{id}</span>
+      <span className={`${styles.name} ${styles.widthName}`}>{name}</span>
     </div>
   )
 
   const renderHeader = () => (
     <div>
-      <span className={styles.id}>ID</span>
-      <span className={styles.name}>Name</span>
+      <span className={`${styles.id} ${styles.widthId}`}>ID</span>
+      <span className={`${styles.name} ${styles.widthName}`}>Name</span>
     </div>
   )
 
